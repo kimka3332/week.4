@@ -1,0 +1,60 @@
+/* alingn-items: center;
+/* justify-content: space-between; */
+
+@-webkit-keyframes rd-up {
+	0% {
+		 
+	}
+
+	50% {
+		margin-top: 400px; border-radius: 50px;
+	}
+
+	100% {
+		
+	}
+}
+
+@-webkit-keyframes rd-down {
+	0% {
+
+	}
+	50% {
+		margin-bottom: 400px; border-radius: 50px;
+	}
+	100%{
+
+	}
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	animation-name: rd-up;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	transition-property: transform;
+	transition-duration: 2s;
+}
+
+.box:hover {
+	transform:rotate(180deg);
+	animation-play-state: paused;
+}
+
+.box2 {
+	width: 100px;
+	height: 100px;
+	animation-name: rd-down;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	transition-property: transform;
+	transition-duration: 2s;
+}
+
+.box2:hover {
+	transform:rotate(180deg);
+	animation-play-state: paused;
+}
